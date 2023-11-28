@@ -1,0 +1,356 @@
+* {
+    color: white;
+    font-family: DFKai-sb;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    background-image: url('./img/bgimg.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 1920px) {
+    body {
+        background-size: auto 925px;
+    }
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 14px;
+}
+::-webkit-scrollbar-track {
+    background: #8A0808;
+}
+::-webkit-scrollbar-track:hover {
+    background: #7A0808;
+}
+::-webkit-scrollbar-thumb {
+    background: #4A0808;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4A0808;
+}
+::-webkit-scrollbar-button {
+    background: #4A0808;
+}
+::-webkit-scrollbar-corner {
+    background: black;
+}
+
+/*Header*/
+#header {
+    display: block;
+    position: sticky;
+    z-index: 100;
+    top: -50px;
+}
+.header {
+    height: 90px;
+    margin: auto auto 8px auto;
+    background-color: #8A0808;
+}
+.header > h1 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.header > h1 > a {
+    display: block;
+    text-decoration: none;
+}
+.header > div {
+    text-align: center;
+    font-size: 0;
+}
+.header > div > div {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+ul.header {
+    display: none;
+    position: absolute;
+}
+ul.header > li {
+    text-align: center;
+    font-size: 26px;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    list-style: none;
+    background: linear-gradient(to left, #8A0808 50%, #6A0808 50%) right;
+    background-size: 200%;
+    transition: .3s ease-in-out;
+}
+ul.header > li:hover {
+    background-position: left;
+}
+ul.header > li > a {
+    display: block;
+    text-decoration: none;
+}
+.header > div > div:hover ul.header {
+    display: block;
+}
+.header > div > div > h2 {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(to left, #8A0808 50%, #6A0808 50%) right;
+    background-size: 220%;
+    transition: .3s ease-in-out;
+}
+.header > div > div:hover > h2 {
+    background-position: left;
+}
+.header > div > div > h2 > a {
+    display: block;
+    text-decoration: none;
+}
+
+/*Footer*/
+div.footer {
+    height: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 16px 0 0 0;
+}
+
+/*Main Page*/
+div.mp1 {
+    text-align: center;
+    font-size: 0;
+    margin: 20px auto 20px auto;
+}
+#logo {
+    width: auto;
+    height: 160px;
+}
+div.mp2 {
+    text-align: center;
+    font-size: 0;
+    margin: 8px auto 8px auto;
+}
+div.mp21 {
+    display: inline-block;
+    height: 40px;
+    font-size: 26px;
+    line-height: 40px;
+    width: 300px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(138, 8, 8, 0), rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 0));
+    margin: 0 4px 0 4px;
+}
+div.mp3 {
+    text-align: center;
+    font-size: 0;
+    width: 580px;
+    height: 315px;
+    background-color: black;
+    margin: 16px auto 16px auto;
+}
+
+/*Equipment*/
+div.equ_center {
+    text-align: center;
+    vertical-align: text-top;
+    font-size: 0;
+    margin: 4px auto 8px auto;
+}
+div.equ_right {
+    text-align: right;
+    vertical-align: text-top;
+    font-size: 0;
+    margin: 8px auto 8px auto;
+}
+div.equ_left {
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 0;
+    margin: 8px auto 8px auto;
+}
+div.equ_word {
+    display: inline-block;
+    height: 450px;
+    width: auto;
+    background: linear-gradient(to bottom, rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 0));
+    margin: 0 4px 0 4px;
+}
+div.equ_word > p {
+    font-size: 32px;
+    color: #FFFFFF;
+    margin: 2px 4px auto 4px;
+}
+div.equ_img {
+    display: inline-block;
+    height: 450px;
+    font-size: 0;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 4px 0 4px;
+}
+div.equ_img1 {
+    display: inline-block;
+    height: 450px;
+    font-size: 0;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 4px 0 4px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+div.equ_space {
+    display: inline-block;
+    height: 450px;
+    width: 20px;
+    vertical-align: bottom;
+}
+div.equ_img > img {
+    height: 450px;
+    width: auto;
+}
+div.equ_img1 > img {
+    height: auto;
+    width: 500px;
+}
+
+
+/*Instance*/
+div.ins_center {
+    text-align: center;
+    font-size: 0;
+    margin: 4px auto 8px auto;
+}
+div.ins_center > p {
+    font-size: 26px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: auto 100px auto 100px;
+}
+div.ins_center table, div.ins_center th, div.ins_center td {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid #8A0808;
+    border-collapse: collapse;
+}
+table.ins1 {
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    margin: auto;
+}
+td.t1 {
+    color: rgb(255, 150, 0);
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    width: 50%;
+}
+td.t2 {
+    color: rgba(255, 255, 255, 1);
+    padding: 0 10px 0 10px;
+    width: 50%;
+}
+div.ins_right {
+    text-align: right;
+    vertical-align: text-top;
+    font-size: 0;
+    margin: 8px auto 8px auto;
+}
+div.ins_left {
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 0;
+    margin: 8px auto 8px auto;
+}
+div.ins_word {
+    display: inline-block;
+    height: 450px;
+    width: auto;
+    background: linear-gradient(to bottom, rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 1), rgba(138, 8, 8, 0));
+    margin: 0 4px 0 4px;
+}
+div.ins_word > p {
+    font-size: 32px;
+    color: #FFFFFF;
+    margin: 2px 4px auto 4px;
+}
+div.ins_img {
+    display: inline-block;
+    height: 450px;
+    font-size: 0;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 4px 0 4px;
+}
+div.ins_space {
+    display: inline-block;
+    height: 450px;
+    width: 20px;
+    vertical-align: bottom;
+}
+div.ins_img > img {
+    height: 450px;
+    width: auto;
+}
+
+/*Potion*/
+div.pot1 table, div.pot1 th, div.pot1 td {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid #8A0808;
+    border-collapse: collapse;
+}
+div.pot1 {
+    text-align: center;
+    font-size: 0;
+    margin: 4px auto 8px auto;
+}
+table.pot1 {
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    margin: auto;
+}
+table.pot1 > tr > th.pot1 {
+    text-align: center;
+}
+table.pot1 > tr > td.pot1 {
+    width: 20%;
+}
+table.pot1 > tr > td.pot2 {
+    width: 10%;
+}
+table.pot1 > tr > td.pot3 {
+    text-align: left;
+    width: 30%;
+    padding-left: 4px;
+}
+table.pot1 > tr > td.pot4 {
+    text-align: left;
+    width: 40%;
+    padding-left: 4px;
+}
+span.job {
+    color: rgb(255, 150, 0);
+}
+span.pos {
+    color: rgb(150, 150, 255);
+}
+span.neg {
+    color: rgb(255, 50, 50);
+}
+span.neg1 {
+    color: rgb(200, 50, 200);
+}

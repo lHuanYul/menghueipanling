@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./img/pldlogo.ico" type="image/x-icon">
+    <title>盤靈-丹方合籍</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body style="min-width: 1200px;">
+    <div id="header">需用 live server 運行 (否則 header 不會顯示)</div>
+    <div class="pot1">
+        <table class="pot1">
+            <tr>
+                <th class="pot1" colspan="2">名稱</th>
+                <th class="pot1">原料</th>
+                <th class="pot1">功效</th>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">混元一氣丹</td>
+                <td class="pot2">初級<br>(*2)</td>
+                <td class="pot3">初級藥引1份<br>土元素15份</td>
+                <td class="pot4">
+                    <span class="pos">抗性(15:00)/抗火(15:00)/吸收(15:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*3)</td>
+                <td class="pot3">中級藥引1份<br>土元素30份</td>
+                <td class="pot4">
+                    <span class="pos">抗性(15:00)/抗火(15:00)/吸收(15:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*3)</td>
+                <td class="pot3">高級藥引1份<br>土元素45份</td>
+                <td class="pot4">
+                    <span class="pos">抗性(15:00)/抗火(15:00)/吸收(15:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" colspan="2">若神丹<br>(*10)</td>
+                <td class="pot3">藥引1份<br>水元素10份</td>
+                <td class="pot4">
+                    <span class="pos">海豚悠遊(10:00)/海靈祝福(10:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" colspan="2">萬靈丹-速<br>(*10)</td>
+                <td class="pot3">藥引1份<br>金、水元素各5份</td>
+                <td class="pot4">
+                    <span class="pos">加速(10:00)/夜視(10:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" colspan="2">萬靈丹-躍<br>(*10)</td>
+                <td class="pot3">藥引1份<br>金、木元素各5份</td>
+                <td class="pot4">
+                    <span class="pos">跳躍提升Ⅱ(10:00)/緩降(10:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">辟穀丹</td>
+                <td class="pot2">初級<br>(*2)</td>
+                <td class="pot3">初級藥引1份<br>木、土元素各5份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅰ(01:00)/飽食Ⅱ</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*5)</td>
+                <td class="pot3">中級藥引1份<br>木、土元素各10份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅱ(01:00)/飽食Ⅳ</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*8)</td>
+                <td class="pot3">高級藥引1份<br>木、土元素各15份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅱ(01:00)/飽食Ⅹ</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">巨力丸</td>
+                <td class="pot2">初級<br>(*2)</td>
+                <td class="pot3">初級藥引1份<br>火元素10份</td>
+                <td class="pot4">
+                    <span class="pos">力量(05:00)/增加弓箭傷害</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*3)</td>
+                <td class="pot3">中級藥引1份<br>火元素20份</td>
+                <td class="pot4">
+                    <span class="pos">力量Ⅱ(05:00)/增加弓箭傷害</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*4)</td>
+                <td class="pot3">高級藥引1份<br>火元素30份</td>
+                <td class="pot4">
+                    <span class="pos">力量Ⅲ(05:00)/增加弓箭傷害</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">玄甲丹</td>
+                <td class="pot2">初級<br>(*8)</td>
+                <td class="pot3">初級藥引1份<br>金、土元素各5份</td>
+                <td class="pot4">
+                    <span class="pos">抗性Ⅱ(00:30)/吸收Ⅱ(15:00)</span><br>
+                    <span class="neg">緩速(00:30)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*12)</td>
+                <td class="pot3">中級藥引1份<br>金、土元素各10份</td>
+                <td class="pot4">
+                    <span class="pos">抗性Ⅲ(00:30)/吸收Ⅲ(15:00)</span><br>
+                    <span class="neg">緩速Ⅱ(00:30)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*15)</td>
+                <td class="pot3">高級藥引1份<br>金、土元素各15份</td>
+                <td class="pot4">
+                    <span class="pos">抗性Ⅳ(00:30)/吸收Ⅳ(15:00)</span><br>
+                    <span class="neg">緩速Ⅲ(00:30)</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="pot1">
+        <table class="pot1">
+            <tr>
+                <th class="pot1" colspan="2">名稱</th>
+                <th class="pot1">原料</th>
+                <th class="pot1">功效</th>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">
+                    逢木回春露[雙]<br>
+                    <span class="job">職業限制[丹]</span>
+                </td>
+                <td class="pot2">初級<br>(*16)</td>
+                <td class="pot3">初級藥引1份<br>木元素5份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅱ(00:05)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*24)</td>
+                <td class="pot3">中級藥引1份<br>木元素10份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅲ(00:05)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*32)</td>
+                <td class="pot3">高級藥引1份<br>木元素15份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅳ(00:10)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">
+                    天神護體<br>
+                    <span class="job">職業限制[丹]</span>
+                </td>
+                <td class="pot2">初級<br>(*10)</td>
+                <td class="pot3">初級藥引1份<br>木、火、土元素各5份</td>
+                <td class="pot4">
+                    <span class="pos">吸收Ⅱ(10:00)/力量(05:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*10)</td>
+                <td class="pot3">中級藥引1份<br>木、火、土元素各10份</td>
+                <td class="pot4">
+                    <span class="pos">吸收Ⅲ(10:00)/力量Ⅱ(05:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*10)</td>
+                <td class="pot3">高級藥引1份<br>木、火、土元素各15份</td>
+                <td class="pot4">
+                    <span class="pos">吸收Ⅳ(10:00)/Ⅲ力量(05:00)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">
+                    九轉還魂香<br>
+                    <span class="job">職業限制[丹]</span>
+                </td>
+                <td class="pot2">初級<br>(*5)</td>
+                <td class="pot3">初級藥引1份<br>木、水、火、土元素各5份</td>
+                <td class="pot4">
+                    <span class="pos">回復(10:00)/生命值提升(10:00)</span><br>
+                    <span class="neg">噁心(00:10)/虛弱(00:10)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*8)</td>
+                <td class="pot3">中級藥引1份<br>木、水、火、土元素各10份</td>
+                <td class="pot4">
+                    <span class="pos">回復Ⅱ(10:00)/生命值提升Ⅱ(10:00)</span><br>
+                    <span class="neg">噁心(00:10)/虛弱(00:10)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*10)</td>
+                <td class="pot3">高級藥引1份<br>木、水、火、土元素各15份</td>
+                <td class="pot4"><span class="pos">回復Ⅱ(15:00)/生命值提升Ⅲ(15:00)</span><br>
+                    <span class="neg">噁心(00:10)/虛弱(00:10)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1" rowspan="3">
+                    封喉[雙]<br>
+                    <span class="job">職業限制[丹]</span>
+                </td>
+                <td class="pot2">初級<br>(*32)</td>
+                <td class="pot3">初級藥引1份<br>金元素5份</td>
+                <td class="pot4">
+                    <span class="neg1">立即傷害Ⅱ</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">中級<br>(*32)</td>
+                <td class="pot3">中級藥引1份<br>金元素10份</td>
+                <td class="pot4">
+                    <span class="neg1">立即傷害Ⅳ</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot2">高級<br>(*32)</td>
+                <td class="pot3">高級藥引1份<br>金元素15份</td>
+                <td class="pot4">
+                    <span class="neg1">立即傷害Ⅵ</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">注：[雙]-除藥引外，其餘材料放入雙倍便可煉製出雙倍丹藥</td>
+            </tr>
+        </table>
+    </div>
+    <div class="pot1">
+        <table class="pot1">
+            <tr>
+                <th class="pot1">名稱</th>
+                <th class="pot1">原料</th>
+                <th class="pot1">功效</th>
+            </tr>
+            <tr>
+                <td class="pot1">
+                    起死回生泉(*10)<br>
+                    <span class="job">職業限制[丹]</span>
+                </td>
+                <td class="pot4">特殊藥引1份(人參*8+生鮭魚*1)<br>木、土元素各10份</td>
+                <td class="pot4">
+                    <span class="pos">立即治療Ⅴ/回復Ⅴ(00:05)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="pot1">
+                    見血封喉(*10)<br>
+                    <span class="job">職業限制[丹]</span>
+                </td>
+                <td class="pot4">特殊藥引1份(靈芝*8+生鮭魚*1)<br>金、火、土元素各10份</td>
+                <td class="pot4">
+                    <span class="neg1">立即傷害Ⅶ</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">注：特殊藥引須至蓬萊島太上老君處兌換</td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript" src="./js/loadHF.js"></script>
+</body>
+</html>
