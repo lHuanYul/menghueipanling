@@ -1,6 +1,6 @@
 Html 網頁地圖
 
-自架網站連結：https://hypanlingguyumenghueipanling.on.drv.tw/hypld/
+自架網站連結：https://lhuanyul.github.io/menghueipanling/
 自架網站有時icon不會顯示, 可用 Shift+F5 或 CTRL+F5 重整試試
 
 主網頁：index.html
